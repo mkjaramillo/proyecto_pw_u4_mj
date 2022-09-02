@@ -31,10 +31,20 @@
 </template>
 
 <script>
+  import obtenerEmpleado from '@/helpers/procesarEmpleado';
+import { onMounted } from 'vue';
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods:{
+    async buscar(id){
+      await obtenerEmpleado(id)
+    }
+  },
+  mounted(){
+    this.buscar(1)
   }
 }
 </script>
