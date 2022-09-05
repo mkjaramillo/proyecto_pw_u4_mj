@@ -87,10 +87,10 @@
 </template>
 
 <script>
-import obtenerEmpleado from "@/helpers/procesarEmpleado";
-import insertarEmpleado from "@/helpers/procesarEmpleado";
+//import obtenerEmpleado from "@/helpers/procesarEmpleado";
+//import insertarEmpleado from "@/helpers/procesarEmpleado";
 import actualizarEmpleado from "@/helpers/procesarEmpleado";
-import eliminarEmpleado from "@/helpers/procesarEmpleado";
+//import eliminarEmpleado from "@/helpers/procesarEmpleado";
 import { onMounted } from "vue";
 export default {
   name: "HelloWorld",
@@ -112,8 +112,8 @@ export default {
     },
   },
   mounted() {
-    this.buscar(2);
-    const empl = {
+    //this.buscar(2);
+    /*const empl = {
       id: 5,
       nombre: "Patricia",
       apellido: "Jaramillo",
@@ -121,7 +121,7 @@ export default {
       salario: 250,
     };
     this.insertar(empl);
-
+*/
     const empl2 = {
       id: 2,
       nombre: "Actualzado",
@@ -130,7 +130,7 @@ export default {
       salario: 250,
     };
     this.actualizar(empl2);
-   this.eliminar(3);
+   //this.eliminar(3);
   },
 };
 </script>

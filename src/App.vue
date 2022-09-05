@@ -1,15 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <crud-vue></crud-vue>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import CrudVue from './components/Crud.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    CrudVue
   }
 }
 </script>
